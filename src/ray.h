@@ -6,7 +6,7 @@
 class Ray {
  public:
   Ray() {}
-  Ray(const Point& origin, const Vec3& direction)
+  Ray(const Point3& origin, const Vec3& direction)
       : orig(origin), dir(direction) {}
 
   Point3 origin() const { return orig; }
@@ -17,6 +17,6 @@ class Ray {
  public:
   Point3 orig;
   Vec3 dir;
-}
+};
 
 #endif  // RAY_H
